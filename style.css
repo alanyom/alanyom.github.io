@@ -1,42 +1,61 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset margin and padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
     text-align: center;
 }
 
-main {
-    padding: 1rem;
+h1 {
+    margin-bottom: 20px;
 }
 
-footer {
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.input-box {
+    display: inline-block;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
 }
 
-/* Button Styles */
-button {
-    background-color: #007bff;
-    color: white;
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
     border: none;
-    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049; /* Darker green */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
 }
