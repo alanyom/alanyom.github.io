@@ -3,24 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Traffic Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
+        <h1>Traffic Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#charts">Traffic Charts</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a simple website hosted on GitHub Pages. Feel free to explore and customize it!</p>
-            <button id="clickMeButton">Click Me!</button>
-            <p id="message"></p>
+        <section id="overview">
+            <h2>Traffic Overview</h2>
+            <p>Welcome to the Traffic Dashboard. Here you can view various traffic statistics and visualizations.</p>
+        </section>
+        <section id="charts">
+            <h2>Traffic Charts</h2>
+            <div id="chart-container">
+                <canvas id="trafficChart"></canvas>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This dashboard provides visual insights into traffic data. The data displayed here is simulated for demonstration purposes.</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My GitHub Pages Site</p>
+        <p>&copy; 2024 Traffic Dashboard. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
