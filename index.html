@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Classification Module</title>
+    <title>Elbow Curve with Adjustable Parameters</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ml5@2.4.0/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Interactive Classification Module</h1>
+        <h1>Elbow Curve with Adjustable Batch Size and Epochs</h1>
         <div id="controls">
-            <button onclick="trainModel()">Train Model</button>
-            <button onclick="predict()">Predict</button>
-            <input type="number" id="inputValue" placeholder="Enter value">
+            <label for="batchSize">Batch Size:</label>
+            <input type="number" id="batchSize" value="32" min="1">
+            <label for="epochs">Epochs:</label>
+            <input type="number" id="epochs" value="10" min="1">
+            <button onclick="updateModel()">Update Model</button>
         </div>
-        <div id="results">
-            <h2>Results:</h2>
-            <p id="accuracy">Accuracy: N/A</p>
-            <p id="prediction">Prediction: N/A</p>
-        </div>
+        <canvas id="elbowChart"></canvas>
     </div>
     <script src="script.js"></script>
 </body>
