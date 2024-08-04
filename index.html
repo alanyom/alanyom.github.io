@@ -3,40 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Dashboard</title>
+    <title>Interactive Classification Module</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@2.4.0/dist/ml5.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Traffic Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#charts">Traffic Charts</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="overview">
-            <h2>Traffic Overview</h2>
-            <p>Welcome to the Traffic Dashboard. Here you can view various traffic statistics and visualizations.</p>
-        </section>
-        <section id="charts">
-            <h2>Traffic Charts</h2>
-            <div id="chart-container">
-                <canvas id="trafficChart"></canvas>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This dashboard provides visual insights into traffic data. The data displayed here is simulated for demonstration purposes.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Traffic Dashboard. All rights reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="container">
+        <h1>Interactive Classification Module</h1>
+        <div id="controls">
+            <button onclick="trainModel()">Train Model</button>
+            <button onclick="predict()">Predict</button>
+            <input type="number" id="inputValue" placeholder="Enter value">
+        </div>
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="accuracy">Accuracy: N/A</p>
+            <p id="prediction">Prediction: N/A</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
