@@ -12,10 +12,12 @@
     <div class="container">
         <h1>Elbow Curve</h1>
         <div id="controls">
-            <label for="batchSize">Batch Size:</label>
-            <input type="number" id="batchSize" value="32" min="1">
-            <label for="epochs">Epochs:</label>
-            <input type="number" id="epochs" value="10" min="1">
+            <div class="your-class">
+                <label for="batchSize">Batch Size:</label>
+                <input type="number" id="batchSize" value="32" min="1">
+                <label for="epochs">Epochs:</label>
+                <input type="number" id="epochs" value="10" min="1">
+            </div>   
             <button onclick="updateModel()">Update Model</button>
         </div>
         <canvas id="elbowChart"></canvas>
