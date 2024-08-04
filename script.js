@@ -1,9 +1,9 @@
-// JavaScript for handling button click
-document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById('clickMeButton');
-    const message = document.getElementById('message');
-
-    button.addEventListener('click', () => {
-        message.textContent = 'Button clicked! Welcome to GitHub Pages.';
-    });
-});
+function displayName() {
+    const name = document.getElementById('nameInput').value;
+    const greeting = document.getElementById('greeting');
+    if (name) {
+        greeting.textContent = `Hello, ${name}!`;
+    } else {
+        greeting.textContent = 'Please enter your name.';
+    }
+}
