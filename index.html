@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Minimalistic Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a simple website hosted on GitHub Pages. Feel free to explore and customize it!</p>
-            <button id="clickMeButton">Click Me!</button>
-            <p id="message"></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My GitHub Pages Site</p>
-    </footer>
+    <div class="container">
+        <h1>Enter Your Name</h1>
+        <div class="input-box">
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <button onclick="displayName()">Submit</button>
+        </div>
+        <p id="greeting"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
